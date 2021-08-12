@@ -25,3 +25,13 @@ root = ET.fromstring(xml_string)
 tree = ET.ElementTree(element=root)
 
 tree.write(path_w) 
+
+# XMLファイルをテキストベースに変換
+def XML_analysis():
+  values = [];
+  for value in root.iter('value'):
+    values.append(value.attrib)
+  
+  print(f"住所は、{values[4]['state']} {values[5]['city']} {values[6]['address']} です。")
+
+XML_analysis()
