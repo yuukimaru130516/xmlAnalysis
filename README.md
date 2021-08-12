@@ -1,6 +1,3 @@
-# xml_Analysis
-XMLファイルの解析
-
 ## 郵便番号検索APIを用いて、XMLファイルを解析する
 
 ### 郵便番号検索API(http://zip.cgis.biz/)
